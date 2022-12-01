@@ -61,6 +61,7 @@ function Form({ setShowResult, setResult, setName }: Props) {
       })
       .catch((err) => console.log("error! :" + err));
   }
+  //http://52.79.247.96:8000/selT/college?college=%ED%95%9C%EB%A6%BC&major=&admission_type=%EC%A2%85%ED%95%A9
   function loadMajor(uni: any) {
     fetch(
       `${url}/selT/college?college=${uni}&major=&admission_type=${
